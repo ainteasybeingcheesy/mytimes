@@ -23,6 +23,8 @@ a:visited {
 .logo {
   display: flex;
   align-items: center;
+  border: 1px solid black;
+  flex-grow: 1;
 }
 
 .logo span {
@@ -31,4 +33,123 @@ a:visited {
 
 nav span {
   padding: 15px;
+}
+
+.column.large {
+  width: 630px;
+  margin-right: 40px;
+  border: 1px solid black;
+  align-items: flex-start;
+}
+
+.column.medium {
+  width: 300px;
+  margin-right: 40px;
+  border: 1px solid black;
+}
+
+.column.small {
+  display: flex;
+  width: 240px;
+  border: 1px solid black;
+  align-items: center;
+  margin-right: 40px;
+  flex-direction: column;
+  align-content: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  border: 1px solid black;
+  border-top: 0;
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.mainstory {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainstory h1 {
+  border: 1px solid black;
+  background-image: url("./images/style.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  height: 300px;
+  margin-top: 0;
+}
+
+.fallseason {
+  border: 2px solid black;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.fallseason h2 {
+  border: 1px solid black;
+  background-image: url("./images/fallseason.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  margin: 0;
+
+}
+
+.cameraman {
+  border: 2px solid black;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.cameraman h2 {
+  border: 1px solid black;
+  background-image: url("./images/cameraman.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  margin: 0;
+}
+
+.fbi {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.catceo {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.catceo h1 {
+  border: 1px solid black;
+  background-image: url("./images/catceo.png");
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+}
+
+.newsbites {
+  display: flex;
+  border: 2px solid black;
+  flex-direction: column;
+}
+
+main p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }

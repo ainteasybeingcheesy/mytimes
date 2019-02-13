@@ -6,10 +6,16 @@ header {
   color: MediumAquamarine;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
   border-bottom: 1px solid black;
-  padding-bottom: 10px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 80px;
+  top: 0;
+}
+
+body {
+  margin: 0;
 }
 
 a {
@@ -23,8 +29,9 @@ a:visited {
 .logo {
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   flex-grow: 1;
+  margin-left: 30px;
 }
 
 .logo span {
@@ -35,23 +42,27 @@ nav span {
   padding: 15px;
 }
 
+nav {
+  margin-right: 30px;
+}
+
 .column.large {
   width: 630px;
   margin-right: 40px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   align-items: flex-start;
 }
 
 .column.medium {
   width: 300px;
   margin-right: 40px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .column.small {
   display: flex;
   width: 240px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   align-items: center;
   margin-right: 40px;
   flex-direction: column;
@@ -62,20 +73,21 @@ main {
   display: flex;
   justify-content: center;
   padding-top: 30px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   border-top: 0;
   margin-left: 65px;
   margin-right: 65px;
+  margin-top: 80px;
 }
 
 .mainstory {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
 }
 
 .mainstory h1 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-image: url("./images/style.png");
   font-family: Georgia;
   font-weight: bold;
@@ -83,57 +95,71 @@ main {
   color: white;
   height: 300px;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .fallseason {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: inline-flex;
   flex-direction: column;
+  margin-right: 20px;
+}
+
+.fallseason h1 {
+  margin-bottom: 0;
 }
 
 .fallseason h2 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-image: url("./images/fallseason.png");
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
   height: 300px;
-  margin: 0;
-
+  margin-top: 50px;
 }
 
 .cameraman {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: inline-flex;
   flex-direction: column;
+  margin-left: 20px;
+}
+
+.cameraman h1 {
+  margin-bottom: 0;
 }
 
 .cameraman h2 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-image: url("./images/cameraman.png");
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
   color: white;
   height: 300px;
-  margin: 0;
+  margin-top: 50px;
 }
 
 .fbi {
-  border: 2px solid black;
+  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
 }
 
+.fbi h1 {
+  margin-bottom: 0;
+}
+
 .catceo {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
 }
 
 .catceo h1 {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   background-image: url("./images/catceo.png");
   font-family: Georgia;
   font-weight: bold;
@@ -142,14 +168,49 @@ main {
   height: 300px;
 }
 
+.catceo p {
+  margin-top: 0;
+}
+
 .newsbites {
   display: flex;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   flex-direction: column;
+}
+
+.newsbites h1 {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.newsbites ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+
+}
+
+.newsbites ul li {
+  /* border-top: 1px solid black; */
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
+
 }
 
 main p {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+
+.column.large section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
